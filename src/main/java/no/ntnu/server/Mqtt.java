@@ -55,7 +55,7 @@ public class Mqtt {
     this.input = new BufferedReader(new InputStreamReader(in));
 
     //Set callback
-    this.client.setCallback(new OnMassageCallback());
+    this.client.setCallback(new OnMessageCallback());
 
     //Establish connection
     System.out.println("Connecting to broker: " + this.broker);

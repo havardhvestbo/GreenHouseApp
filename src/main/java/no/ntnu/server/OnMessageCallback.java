@@ -4,7 +4,7 @@ import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
-public class OnMassageCallback implements MqttCallback {
+public class OnMessageCallback implements MqttCallback {
 
   @Override
   public void connectionLost(Throwable throwable) {
