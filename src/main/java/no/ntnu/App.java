@@ -17,7 +17,7 @@ public class App {
   Sensor temperatureSensor;
   Sensor humiditySensor;
 
-  Mqtt mqttBroker = new Mqtt("129.241.152.12", "1883", "1");
+  //Mqtt mqttBroker = new Mqtt("129.241.152.12", "1883", "1");
 
   public App() throws MqttException, IOException {
   }
