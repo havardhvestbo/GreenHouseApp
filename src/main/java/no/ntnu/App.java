@@ -1,17 +1,26 @@
 package no.ntnu;
 
+import java.io.IOException;
 import no.ntnu.sensors.Sensor;
+import no.ntnu.server.Mqtt;
+import org.eclipse.paho.client.mqttv3.MqttException;
 
 /**
  * Represents the whole application, including the sensors.
  */
 public class App {
+
   private static final long SLEEP_DURATION_MS = 2000;
   double lastTemperatureReading;
   double lastHumidityReading;
 
   Sensor temperatureSensor;
   Sensor humiditySensor;
+
+  Mqtt mqttBroker = new Mqtt("129.241.152.12", "1883", "1");
+
+  public App() throws MqttException, IOException {
+  }
 
   /**
    * Run the application, does not return, except if something goes wrong.
