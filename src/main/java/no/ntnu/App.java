@@ -1,8 +1,14 @@
 package no.ntnu;
 
 import java.io.IOException;
+import no.ntnu.client.ClientHandler;
+import no.ntnu.client.ClientRunner;
+import no.ntnu.logic.enums;
 import no.ntnu.sensors.Sensor;
-import no.ntnu.server.Mqtt;
+import no.ntnu.sensors.SensorRunner;
+import no.ntnu.sensors.TemperatureSensor;
+import no.ntnu.server.MqttPublisher;
+import no.ntnu.server.MqttSubscriber;
 import org.eclipse.paho.client.mqttv3.MqttException;
 
 /**
@@ -17,8 +23,6 @@ public class App {
   Sensor temperatureSensor;
   Sensor humiditySensor;
 
-  //Mqtt mqttBroker = new Mqtt("129.241.152.12", "1883", "1");
-
   public App() throws MqttException, IOException {
   }
 
@@ -27,12 +31,12 @@ public class App {
    *
    * @throws IllegalStateException If something went wrong during the process
    */
-  public void run() throws IllegalStateException {
+  public void run() throws IllegalStateException, MqttException {
     initializeSensors();
     while (true) {
       readAllSensors();
       sendDataToServer();
-      powerNap();
+      goToSleep();
     }
   }
 
@@ -59,15 +63,23 @@ public class App {
     lastHumidityReading = humiditySensor.readValue();
   }
 
-  private void sendDataToServer() {
-    // TODO - implement sensor data sending to the server
+  private void sendDataToServer() throws MqttException {
+    MqttPublisher mqttPublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.CLIENT_ID, enums.QOS);
+    mqttPublisher.startConnection();
+
+    MqttSubscriber mqttSubscriber = new MqttSubscriber(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.CLIENT_ID, enums.QOS);
+    mqttSubscriber.startClient();
+
     System.out.println("Sending data to server:");
     System.out.println("  temp: " + lastTemperatureReading + "C");
     System.out.println("  humi: " + lastHumidityReading + "%");
     System.out.println("");
+    System.out.println("Received messages: " + mqttSubscriber.getData());
+    System.out.println("Disconnecting client: " + mqttSubscriber.getClientId());
+    mqttSubscriber.disconnectClient();
   }
 
-  private void powerNap() {
+  private void goToSleep() {
     try {
       Thread.sleep(SLEEP_DURATION_MS);
     } catch (InterruptedException e) {
