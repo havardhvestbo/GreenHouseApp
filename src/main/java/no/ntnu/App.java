@@ -1,12 +1,8 @@
 package no.ntnu;
 
 import java.io.IOException;
-import no.ntnu.client.ClientHandler;
-import no.ntnu.client.ClientRunner;
 import no.ntnu.logic.enums;
 import no.ntnu.sensors.Sensor;
-import no.ntnu.sensors.SensorRunner;
-import no.ntnu.sensors.TemperatureSensor;
 import no.ntnu.server.MqttPublisher;
 import no.ntnu.server.MqttSubscriber;
 import org.eclipse.paho.client.mqttv3.MqttException;
