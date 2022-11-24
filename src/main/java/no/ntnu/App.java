@@ -62,16 +62,18 @@ public class App {
   private void sendDataToServer() throws MqttException {
     MqttPublisher mqttPublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.CLIENT_ID, enums.QOS);
     mqttPublisher.startConnection();
+    mqttPublisher.publishMessageToBroker(lastTemperatureReading + "");
 
     MqttSubscriber mqttSubscriber = new MqttSubscriber(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.CLIENT_ID, enums.QOS);
     mqttSubscriber.startClient();
 
-    System.out.println("Sending data to server:");
+    System.out.println("Sending data to server: ");
     System.out.println("  temp: " + lastTemperatureReading + "C");
     System.out.println("  humi: " + lastHumidityReading + "%");
     System.out.println("");
+    System.out.println("Received from topic: " + mqttSubscriber.getTopic());
+    System.out.println("Received from Client: " + mqttSubscriber.getClientId());
     System.out.println("Received messages: " + mqttSubscriber.getData());
-    System.out.println("Disconnecting client: " + mqttSubscriber.getClientId());
     mqttSubscriber.disconnectClient();
   }
 
