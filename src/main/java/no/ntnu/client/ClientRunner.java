@@ -4,6 +4,7 @@ package no.ntnu.client;
 import static no.ntnu.logic.enums.BROKER;
 import static no.ntnu.logic.enums.CLIENT_ID;
 import static no.ntnu.logic.enums.QOS;
+import static no.ntnu.logic.enums.TEMPERATURE_TOPIC;
 
 import no.ntnu.server.MqttSubscriber;
 
@@ -22,8 +23,7 @@ public class ClientRunner {
    */
   public void start() {
     try {
-      // receiveFromTopic(ClientRunner.TEMPERATURE_TOPIC);
-      receiveFromTopic("#");
+      receiveFromTopic(TEMPERATURE_TOPIC);
       receiveData.startClient();
     } catch (Exception e) {
       System.err.println(e);
