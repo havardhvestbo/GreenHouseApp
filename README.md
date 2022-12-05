@@ -77,6 +77,15 @@ Some principles to follow:
 * Is there any domain-knowledge the reader should know to understand the
   project? For example, if you are monitoring temperature in a greenhouse, what
   is known about it? Is the optimal temperature +20..30C, or is it -10..0C?
+  
+ ##DOMAIN KNOWLEGDE
+ The optimal temperature for the greenhouses we aim to supply is around 20 degrees Celsius.
+ This can fluctuate between 18 and 24 degrees, which is still acceptable. To regulate the 
+ temperature you could use a greenhouse air conditioner, shaders to block out the sun, 
+ ventilation system, misting or fogging. The ideal greenhouse humidity is around 80%. 
+ This is where we achieve the highest growth rate for normal greenhouse plants. 
+ To maintain and regulate the humidity you can use misting techniques or a humidifier.
+  
 * At the same time, remember that the focus of the course is computer networks
   and networking protocols. Therefore, use more time describing
   networking-related concepts.
