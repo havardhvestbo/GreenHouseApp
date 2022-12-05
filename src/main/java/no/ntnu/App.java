@@ -63,19 +63,17 @@ public class App {
   private void sendDataToServer() throws MqttException {
     MqttPublisher temperaturePublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_SENSOR_ID, enums.QOS);
     temperaturePublisher.startConnection();
-    temperaturePublisher.publishMessageToBroker(lastTemperatureReading + "C");
+    temperaturePublisher.publishMessageToBroker(lastTemperatureReading + "");
 
     MqttPublisher humidityPublisher = new MqttPublisher(enums.HUMIDITY_TOPIC, enums.BROKER, enums.HUMIDITY_SENSOR_ID, enums.QOS);
     humidityPublisher.startConnection();
-    humidityPublisher.publishMessageToBroker(lastHumidityReading + "%");
+    humidityPublisher.publishMessageToBroker(lastHumidityReading + "");
 
     ClientHandler clientHandler = new ClientHandler(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_CLIENT_ID, enums.QOS);
     clientHandler.startClient();
-    clientHandler.getLastValue();
 
     ClientHandler clientHandler2 = new ClientHandler(enums.HUMIDITY_TOPIC, enums.BROKER, enums.HUMIDITY_CLIENT_ID, enums.QOS);
     clientHandler2.startClient();
-    clientHandler2.getLastValue();
 
     System.out.println("Next reading. ");
     System.out.println("");
