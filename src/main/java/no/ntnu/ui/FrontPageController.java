@@ -1,4 +1,4 @@
-package no.ntnu.ui.controllers;
+package no.ntnu.ui;
 
 public class FrontPageController {
 
