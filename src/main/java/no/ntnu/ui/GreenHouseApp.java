@@ -1,9 +1,6 @@
 package no.ntnu.ui;
 
-import static javafx.application.Application.launch;
-
 import java.io.IOException;
-import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -26,7 +23,7 @@ public class GreenHouseApp extends Application {
       Parent root = fxmlLoader.load();
       FrontPageController frontPageController = fxmlLoader.getController();
       Scene scene = new Scene(root, 700, 400);
-      primaryStage.setTitle("A simple greenhouse");
+      primaryStage.setTitle("Greenhouse APP");
       primaryStage.setScene(scene);
       primaryStage.show();
 
