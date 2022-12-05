@@ -63,11 +63,11 @@ public class App {
   private void sendDataToServer() throws MqttException {
     MqttPublisher temperaturePublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_SENSOR_ID, enums.QOS);
     temperaturePublisher.startConnection();
-    temperaturePublisher.publishMessageToBroker(lastTemperatureReading + "");
+    temperaturePublisher.publishMessageToBroker(lastTemperatureReading + "C");
 
     MqttPublisher humidityPublisher = new MqttPublisher(enums.HUMIDITY_TOPIC, enums.BROKER, enums.HUMIDITY_SENSOR_ID, enums.QOS);
     humidityPublisher.startConnection();
-    humidityPublisher.publishMessageToBroker(lastTemperatureReading + "");
+    humidityPublisher.publishMessageToBroker(lastHumidityReading + "%");
 
     ClientHandler clientHandler = new ClientHandler(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_CLIENT_ID, enums.QOS);
     clientHandler.startClient();
