@@ -84,12 +84,11 @@ Some principles to follow:
 
 # Methodology
 
-Here you can write about the way you have worked. You don't need to write much
-about how you organized sprints, this documentation will be handled separately.
-Again - think about the next engineer-reader. What does the engineer need to
-know about the way you worked? Did you do some user tests? Experiments? How did
-you measure, evaluate? Any best-practices you followed? What must the reader
-understand to be able to interpret the results properly?
+The project was done in intervals, whenever we had periods of free time. Because of
+other exams and deadlines, we didn't work in a organized week to week basic.
+The project didn't require any user tests or expirements, because the sensors are
+entirely simulated. To be able to understand the results of the project, a basic
+understanding of java programming is sufficient.
 
 # Results
 
@@ -111,9 +110,14 @@ well and why?
 
 # Conclusion and future work
 
-Here you summarize the work shortly, the status. Also, here you identify the
-potential work in the future. Note: think in general - how could this work be
-continued (by your group or by others)?
+** SHORT SUMMARY OF WORK DONE SO FAR **
+
+For future work, we would like to develop an app that can run on mobile devices.
+The app works great from a desktop with an IDE installed, but realistically,
+the user wouldn't have a need to check temperature and humidity of their
+greenhouse from a desktop every time. Ideally, they would check it on the
+go, wherever they happen to be. The best solution for that problem is to
+be able to use the GreenHouseApp from a mobile device.
 
 # References
 
