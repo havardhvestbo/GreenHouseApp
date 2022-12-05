@@ -78,7 +78,7 @@ Some principles to follow:
   project? For example, if you are monitoring temperature in a greenhouse, what
   is known about it? Is the optimal temperature +20..30C, or is it -10..0C?
   
- ##DOMAIN KNOWLEGDE
+ ## DOMAIN KNOWLEGDE
  The optimal temperature for the greenhouses we aim to supply is around 20 degrees Celsius.
  This can fluctuate between 18 and 24 degrees, which is still acceptable. To regulate the 
  temperature you could use a greenhouse air conditioner, shaders to block out the sun, 
