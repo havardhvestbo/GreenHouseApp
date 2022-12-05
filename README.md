@@ -112,6 +112,11 @@ Here you describe the results you have obtained. Some considerations:
   reader get an impression of the result without running the system?
 * No need to include code in the report, all the code is in the repository.
 
+The application shows a stream of sensor readings, giving the user insight
+to their greenhouse remotely. (screenshot of readings)
+
+
+
 # Discussion
 
 Here you can reflect on the result. What is working well? What is not working
@@ -128,6 +133,10 @@ greenhouse from a desktop every time. Ideally, they would check it on the
 go, wherever they happen to be. The best solution for that problem is to
 be able to use the GreenHouseApp from a mobile device.
 
+We would also like to notify users whenever the sensor readings are outside
+of the ideal range, but we didn't come up with a good solution for this.
+
 # References
 
 https://learn.eartheasy.com/articles/top-10-greenhouse-gardening-mistakes/
+https://www.eclipse.org/paho/index.php?page=clients/java/index.php
