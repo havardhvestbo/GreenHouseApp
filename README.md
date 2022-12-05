@@ -116,6 +116,9 @@ The application shows a stream of sensor readings, giving the user insight
 to their greenhouse remotely. (screenshot of readings)
 
 
+Each virtual sensor sends data to it´s own topic, using the mqtt publisher. To reviece the data from the mqtt broker, we use the mqttsubscriber. In our case the client handler is the mqttsubsciber (extension to the subscriber). 
+
+
 
 # Discussion
 
