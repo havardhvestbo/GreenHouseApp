@@ -116,7 +116,12 @@ The application shows a stream of sensor readings, giving the user insight
 to their greenhouse remotely. (screenshot of readings)
 
 
-Each virtual sensor sends data to it´s own topic, using the mqtt publisher. To reviece the data from the mqtt broker, we use the mqttsubscriber. In our case the client handler is the mqttsubsciber (extension to the subscriber). 
+Each virtual sensor sends data to it´s own topic, using the mqtt publisher. To 
+reviece the data from the mqtt broker, we use the mqttsubscriber. In our case 
+the client handler is the mqttsubsciber (extension to the subscriber). The 
+data is updated every 5000ms, in order to make the readings seem as probable as
+possible. Having very frequent updates makes no sense, since temperature takes
+quite some time to change drastically.
 
 
 
@@ -142,4 +147,5 @@ of the ideal range, but we didn't come up with a good solution for this.
 # References
 
 https://learn.eartheasy.com/articles/top-10-greenhouse-gardening-mistakes/
+
 https://www.eclipse.org/paho/index.php?page=clients/java/index.php
