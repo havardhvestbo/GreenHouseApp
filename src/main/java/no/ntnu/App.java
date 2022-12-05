@@ -13,7 +13,7 @@ import org.eclipse.paho.client.mqttv3.MqttException;
  */
 public class App {
 
-  private static final long SLEEP_DURATION_MS = 2000;
+  private static final long SLEEP_DURATION_MS = 5000;
   double lastTemperatureReading;
   double lastHumidityReading;
 

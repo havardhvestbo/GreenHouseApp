@@ -6,6 +6,8 @@ import no.ntnu.sensors.TemperatureSensor;
 
 /**
  * Manages a collection of all available sensors
+ *
+ *
  */
 public class SensorProvider {
   private final TemperatureSensor temperatureSensor = new TemperatureSensor();
