@@ -9,29 +9,107 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--
+                Versions of plugins
+                 -->
+        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+        <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
+        <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
+        <maven.javadoc.plugin.version>3.3.1</maven.javadoc.plugin.version>
+        <!--
+                Versions of dependencies
+                 -->
+        <junit.jupiter.version>5.7.1</junit.jupiter.version>
+        <javafx.version>17.0.2</javafx.version>
     </properties>
 
+    <build>
+        <plugins>
+            <!--  Add a newer version of the Maven compiler to be compliant with modules  -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
+            <!--  JavaFX Maven plugin, to enabeling javafx:run  -->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>no.ntnu/no.ntnu.Main</mainClass>
+                </configuration>
+            </plugin>
+            <!--  Add a newer version of the JUnit test interface surefire, to be compliant with JUnit5  -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+            </plugin>
+            <plugin>
+                <!--
+                                Plugin that generates JavaDoc
+                                 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.3.1</version>
+                <!--  configure how to execute this plugin  -->
+                <executions>
+                    <execution>
+                        <!--
+                                                    connect the execution of the plugin to the Maven lifecycle phase "package"
+                                                    so that JavaDoc is generated every time you run "mvn package"
+                                                 -->
+                        <phase>package</phase>
+                        <id>attach-javadocs</id>
+                        <!--
+                                                    set which of the goals in the plugin to execute. The JavaDoc plugin
+                                                    has a total of 16 goals to choose from. See: https://maven.apache.org/plugins/maven-javadoc-plugin/
+                                                    The most common once beeing either "javadoc" or "jar"
+                                                 -->
+                        <goals>
+                            <goal>javadoc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!--  generate javadoc only for public classes and members  -->
+                    <show>public</show>
+                    <!--  Omits the HELP link in the navigation bars at the top and bottom of each page of output.  -->
+                    <nohelp>true</nohelp>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.8.2</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.eclipse.paho</groupId>
             <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
             <version>1.2.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>17.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>17.0.2</version>
+        </dependency>
+        <!--
+                And of course we need to add support for JUnit5-testing ;-)
+                REMEMBER to add the scope-part!
+                 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.7.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-
 </project>

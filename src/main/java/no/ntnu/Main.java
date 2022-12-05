@@ -1,6 +1,7 @@
 package no.ntnu;
 
 import java.io.IOException;
+import no.ntnu.ui.GreenHouseApp;
 import org.eclipse.paho.client.mqttv3.MqttException;
 
 /**
@@ -11,14 +12,18 @@ import org.eclipse.paho.client.mqttv3.MqttException;
      * Start the application
      * @param args Not used
      */
-    public static void main(String[] args) throws MqttException, IOException {
-      System.out.println("Starting the application...");
-      App app = new App();
-      try {
-        app.run();
-      } catch (Exception e) {
-        System.out.println("Oops: " + e.getMessage());
-      }
-      System.out.println("Application finished");
-    }
+//    public static void main(String[] args) throws MqttException, IOException {
+//      System.out.println("Starting the application...");
+//      App app = new App();
+//      try {
+//        app.run();
+//      } catch (Exception e) {
+//        System.out.println("Oops: " + e.getMessage());
+//      }
+//      System.out.println("Application finished");
+//    }
+
+  public static void main(String[] args) {
+    GreenHouseApp.main(args);
+  }
 }
