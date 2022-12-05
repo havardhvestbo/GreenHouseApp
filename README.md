@@ -41,7 +41,7 @@ would cost a lot of manpower. But with the advancements in wireless technology, 
 develop sensors that record and transmit this information automatically.
 Our main target is greenhouses, but our solution could also be implemented into other 
 domains and fields if needed. The sensor nodes can operate just as good in a house, 
-office building and engine room. This makes helps make our application versatile, 
+office building and engine room. This makes our application versatile, 
 and viable choice for a broad customer base. 
 
 ## Theory and technology
