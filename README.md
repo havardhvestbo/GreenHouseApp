@@ -5,37 +5,19 @@ Whenever the temperature or humidity fluxuates outside a given range, you get a 
 
 
 ## Abstract
+Temperatures in Norway are fluxuating constantly. Mornings can be freezing cold,
+but when the sun is out mid-day, it's suddenly warm. Growing your own plants can
+be challenging when you constantly have to monitor the conditions for optimal
+growth. In this project we propose a helpful application that monitors
+temperature and humidity in a greenhouse. The idea is that when the application
+is running, you have access to a constant stream of information regarding the
+greenhouses condition. In our app, the information we care about is how hot it
+is, and how humid it is - inside our greenhouse. 
 
-This is the shortest version of your project's description. Think of a busy
-person who has 1 minute to get familiar with what this is about. The abstract
-should be short but descriptive.
-Suggested content in the abstract:
+** WHAT MORE DOES IT DO **
 
-* Describe the background and importance of the situation, 1-2 sentences
-* Describe a problem, 1-2 sentences
-* Describe your proposed solution, 1-3 sentences
-* Describe the results you have achieved, 1-3 sentences
-* Describe the experiments or evaluation you have done
-* Conclusions and possible future work
+** CONCLUSION AND FUTURE WORK **
 
-Here is an example abstract of an imaginary project:
-Modern urban lifestyle has high demands on the individuals. We have busy
-schedules and need to remember many things. One of the most irritating things in
-a hectic morning is the inability to find your keys or wallet. In this
-project we propose a novel solution for tracking of daily-life objects, such as
-your wallet or keychain. Users attach smart chips with Bluetooth communication
-to each important asset they want to track. This gives the ability to use a
-smartphone to locate the missing item. We have created a prototype system,
-described in this report. We have performed a user study with 20 participants
-who were given the task to locate a wallet inside a living room.
-The results show that our solution helps the users to locate their items within
-2 minutes the first time, and within 45 seconds when they are using the app
-repeatedly. Possible future research directions include design of a robust and
-lightweight RFID tag, and possibilities to locate ones items using a mobile
-phone of a family member.
-
-Note: in your project you may not have user tests. Describe the analysis and
-evaluation you have had.
 
 ## Introduction
 
