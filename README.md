@@ -34,6 +34,15 @@ Here you introduce your project in more detail. Include the following:
   in ["Methodology"]. Then the obtained [results] are presented, followed by
   [reflection and discussion of possible improvements]." Note: don't copy this
   text, write your own!
+  
+Our application will mainly work in greenhouses, where the need to constantly 
+monitor the temperature and humidity is important. This is a task that traditionally
+would cost a lot of manpower. But with the advancements in wireless technology, we can
+develop sensors that record and transmit this information automatically.
+Our main target is greenhouses, but our solution could also be implemented into other 
+domains and fields if needed. The sensor nodes can operate just as good in a house, 
+office building and engine room. This makes helps make our application versatile, 
+and viable choice for a broad customer base. 
 
 ## Theory and technology
 
