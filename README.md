@@ -21,12 +21,6 @@ is, and how humid it is - inside our greenhouse.
 
 ## Introduction
 
-Here you introduce your project in more detail. Include the following:
-
-* Introduction of the context, the domain. Where will your solution work? Is
-  this the maritime domain, finance, private homes?
-* Introduction of the problem. What is problematic in this environment? What
-  will you solve? Why is this relevant?
 * Short introduction in the rest of the report, preferably with links to the
   other chapters. For example, "We propose an Internet-of-Things system using
   temperature and humidity sensors. First we describe the used
@@ -37,11 +31,13 @@ Here you introduce your project in more detail. Include the following:
   
 Our application will mainly work in greenhouses, where the need to constantly 
 monitor the temperature and humidity is important. This is a task that traditionally
-would cost a lot of manpower. But with the advancements in wireless technology, we can
-develop sensors that record and transmit this information automatically.
+is incredibly tedious. But with the advancements in wireless technology, we can
+develop sensors that record and transmit this information automatically. It's
+important that greenhouses keep their temperature and humidity stable, as the range
+of ideal temperature and humidity is 20-24 degrees and 80-95% respectively. (ref)
 Our main target is greenhouses, but our solution could also be implemented into other 
 domains and fields if needed. The sensor nodes can operate just as good in a house, 
-office building and engine room. This makes our application versatile, 
+office building or an engine room. This makes our application versatile, 
 and viable choice for a broad customer base. 
 
 ## Theory and technology
@@ -94,7 +90,11 @@ Some principles to follow:
 # Methodology
 
 The project was done in intervals, whenever we had periods of free time. Because of
-other exams and deadlines, we didn't work in a organized week to week basic.
+other exams and deadlines, we didn't work on a organized week to week basic.
+Most of the coding were done by two people, while the other two people did most of
+the documentation. Much of the coding was a group effort, which according to the
+commits is credited to one person at a time, while it actually was done by multiple
+people in most instances.
 The project didn't require any user tests or expirements, because the sensors are
 entirely simulated. To be able to understand the results of the project, a basic
 understanding of java programming is sufficient.
@@ -130,14 +130,4 @@ be able to use the GreenHouseApp from a mobile device.
 
 # References
 
-Here you provide sources of information. In a written report you typically
-include list of references in the end and have only links to those in the text,
-such as [1], [2], [3]. In markdown (as this document will be) you can include
-most of the links directly in the text. Here in this section you should list the
-sources of information you have used - books, articles, Wikipedia articles,
-other online articles. For each of them you should specify at least the title,
-the author. If available: web link and year when this was published.
-
-Note: YouTube videos are not a good source for information... Some of them are
-very good, but in general YouTube is a large trash bin, where some things turn
-out to be "edible".
+https://learn.eartheasy.com/articles/top-10-greenhouse-gardening-mistakes/
