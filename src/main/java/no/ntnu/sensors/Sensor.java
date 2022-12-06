@@ -3,7 +3,7 @@ package no.ntnu.sensors;
 import no.ntnu.server.MqttPublisher;
 
 /**
- * Represents (or imitates) one physical sensor on the platform
+ * Represents (or imitates) a physical sensor on the platform
  */
 public interface Sensor {
   /**
