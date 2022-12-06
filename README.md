@@ -119,7 +119,8 @@ understanding of java programming is sufficient.
 # Results
 
 The application shows a stream of sensor readings, giving the user insight
-to their greenhouse remotely. (screenshot of readings)
+to their greenhouse remotely. <img width="678" alt="Skjermbilde greenhouseapp" src="https://user-images.githubusercontent.com/102230830/205992480-7f788379-a424-4c2a-8710-57b49abf7168.PNG">
+
 
 Each virtual sensor sends data to it´s own topic, using the mqtt publisher. To 
 reviece the data from the mqtt broker, we use the mqttsubscriber. In our case 
