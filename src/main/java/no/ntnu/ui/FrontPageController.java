@@ -1,18 +1,19 @@
 package no.ntnu.ui;
-import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import no.ntnu.SensorProvider;
 import no.ntnu.client.ClientHandler;
 import no.ntnu.logic.enums;
 import no.ntnu.server.MqttPublisher;
-import org.eclipse.paho.client.mqttv3.MqttException;
 
+
+/**
+ * Controller for the frontpage.
+ * Linked to the FXML-file representing the view of MVC of JavaFx FXML.
+ */
 public class FrontPageController {
 
     MqttPublisher temperaturePublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_SENSOR_ID, enums.QOS);
@@ -25,6 +26,10 @@ public class FrontPageController {
     private TextArea console;
     private PrintStream ps;
 
+
+    /**
+     * Procedure when opening the app
+     */
     public void initialize() {
         ps = new PrintStream(new Console(console));
 
@@ -38,6 +43,9 @@ public class FrontPageController {
         clientHandler2.startClient();
     }
 
+    /**
+     * Procedure when pressing the button. Receives updated data from mqtt broker
+     */
     public void buttonPressed() {
         System.setOut(ps);
         System.setErr(ps);
