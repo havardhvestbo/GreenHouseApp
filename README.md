@@ -63,37 +63,45 @@ on the finished product, as well as possible future implements to the project.
 
 ### MQTT Broker
 
-An MQTT broker is a simple publish-subscribe, machine to machine network protocol, mainly
-used for message queuing service. In our case we publish and subscribe to two different 
-topics on the broker "tcp://129.241.152.12:1883". One for each sensor, 
-"group21/greenhouse/sensors/temperature" and "group21/greenhouse/sensors/humidity".
+ An MQTT broker is a simple publish-subscribe, machine to machine network protocol, mainly
+ used for message queuing service. In our case we publish and subscribe to two different 
+ topics on the broker "tcp://129.241.152.12:1883". One for each sensor, 
+ "group21/greenhouse/sensors/temperature" and "group21/greenhouse/sensors/humidity".
 
-MQTT stands for MQ telemetry transport. The protocol is basically a set of rules that 
-defines and decides how devices publishes and subscribes to data over the web. As seen 
-in the brokers address MQTT uses TCP to establish a connection between the sensors and 
-the MQTT broker.
+ MQTT stands for MQ telemetry transport. The protocol is basically a set of rules that 
+ defines and decides how devices publishes and subscribes to data over the web. As seen 
+ in the brokers address MQTT uses TCP to establish a connection between the sensors and 
+ the MQTT broker.
 
 
   
 ### DOMAIN KNOWLEGDE
 
-  The optimal temperature for the greenhouses we aim to supply is around 20 degrees Celsius.
-  This can fluctuate between 18 and 24 degrees, which is still acceptable. To regulate the 
-  temperature you could use a greenhouse air conditioner, shaders to block out the sun, 
-  ventilation system, misting or fogging. The ideal greenhouse humidity is around 80%. 
-  This is where we achieve the highest growth rate for normal greenhouse plants. 
-  To maintain and regulate the humidity you can use misting techniques or a humidifier.
+ The optimal temperature for the greenhouses we aim to supply is around 20 degrees Celsius.
+ This can fluctuate between 18 and 24 degrees, which is still acceptable. To regulate the 
+ temperature you could use a greenhouse air conditioner, shaders to block out the sun, 
+ ventilation system, misting or fogging. The ideal greenhouse humidity is around 80%. 
+ This is where we achieve the highest growth rate for normal greenhouse plants. 
+ To maintain and regulate the humidity you can use misting techniques or a humidifier.
   
 ### JavaFX
 
-To present the data to the user we created a JavaFX application where the user can fetch
-the data and read it. We used Scene Builder to make the FXML files that we later 
-implemented in the application. This saved us the tedious work of having to manually code
-the size and appearance of the button and textarea, as well as visualise the design for us.
+ To present the data to the user we created a JavaFX application where the user can fetch
+ the data and read it. We used Scene Builder to make the FXML files that we later 
+ implemented in the application. This saved us the tedious work of having to manually code
+ the size and appearance of the button and textarea, as well as visualise the design for us.
 
 
 ### TCP/IP
   
+  TCP/IP is a set of protocols that acts as a framework for organizing connection between servers. 
+  It consist of the following two protocols:
+  
+  IP (Internet Protocol) makes it possible to connect different underlying networks to a common 
+  logical network. The underlying networks can be based on different technologies.
+  
+  TCP (Transmission Control Protocol) is a protocol that ensures reliable transport
+  of data signals between user programs that communicate via the logical network.
 
 # Methodology
 
