@@ -94,7 +94,7 @@ on the finished product, as well as possible future implements to the project.
 
 ### TCP/IP
   
-  TCP/IP is a set of protocols that acts as a framework for organizing connection between servers. 
+  *[TCP/IP](https://www.fortinet.com/resources/cyberglossary/tcp-ip)* is a set of protocols that acts as a framework for organizing connection between servers. 
   It consist of the following two protocols:
   
   IP (Internet Protocol) makes it possible to connect different underlying networks to a common 
