@@ -29,7 +29,7 @@ is, and how humid it is - inside our greenhouse.
 
 * [Discussion](#Discussion)
 
-* [Conclution and Future Work](#Conclution and Future Work)
+* [Conclusion and Future Work](#Conclusion and Future Work)
 
 * [References](#References)
 
