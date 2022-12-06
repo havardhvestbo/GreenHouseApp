@@ -62,8 +62,7 @@ on the finished product, as well as possible future implements to the project.
 
 An MQTT broker is a simple publish-subscribe, machine to machine network protocol, manly used for message queuing service. In our case we publish and subscribe to two different topics on the broker "tcp://129.241.152.12:1883". One for each sensor, "group21/greenhouse/sensors/temperature" and "group21/greenhouse/sensors/humidity". 
 
-MQTT stands for MQ telemetry transport. The protocol is basically a set of rules that defines and decides how devices publishes and subscribes to data over the web. As seen in the brokers address MQTT uses TCP to establish a connection between the sensors and the MQTT broker. 
-![image](https://user-images.githubusercontent.com/101704813/205977205-4efa2fbf-470b-4c6f-9440-9f887f3a7c64.png)
+MQTT stands for MQ telemetry transport. The protocol is basically a set of rules that defines and decides how devices publishes and subscribes to data over the web. As seen in the brokers address MQTT uses TCP to establish a connection between the sensors and the MQTT broker.
 
   
 ### DOMAIN KNOWLEGDE
