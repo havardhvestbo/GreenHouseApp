@@ -29,18 +29,6 @@ public class FrontPageController {
 
     public void initialize() {
         ps = new PrintStream(new Console(console));
-        temperaturePublisher.startConnection();
-        temperaturePublisher.publishMessageToBroker(sensorProvider.getTemperatureSensor().readValue() + "");
-
-        humidityPublisher.startConnection();
-        humidityPublisher.publishMessageToBroker(sensorProvider.getHumiditySensor().readValue() + "");
-
-    }
-
-    public void buttonPressed(ActionEvent event) throws MqttException, IOException {
-        System.setOut(ps);
-        System.setErr(ps);
-        System.out.println("Current readings: ");
 
         temperaturePublisher.startConnection();
         temperaturePublisher.publishMessageToBroker(sensorProvider.getTemperatureSensor().readValue() + "");
@@ -49,8 +37,16 @@ public class FrontPageController {
         humidityPublisher.publishMessageToBroker(sensorProvider.getHumiditySensor().readValue() + "");
 
         clientHandler.startClient();
-
         clientHandler2.startClient();
+    }
+
+    public void buttonPressed(ActionEvent event) throws MqttException, IOException {
+        System.setOut(ps);
+        System.setErr(ps);
+        System.out.println("Current readings: ");
+        System.out.println("");
+
+        initialize();
 
         System.out.println("Press button again to update readings. ");
         System.out.println("");
