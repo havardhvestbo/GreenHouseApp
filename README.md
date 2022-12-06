@@ -60,8 +60,10 @@ on the finished product, as well as possible future implements to the project.
 
 ### MQTT Broker
 
-  An MQTT broker is a simple publish-subscribe, machine to machine network protocol, manly used 
-  for message queing service
+  An MQTT broker is a simple publish-subscribe, machine to machine network protocol,
+  manly used for message queuing service. MQTT stands for MQ telemetry transport. 
+  The protocol is basically a set of rules that defines and decides how devices
+  publishes and subscribes to data over the web.
   
 ### DOMAIN KNOWLEGDE
 
