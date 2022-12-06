@@ -176,3 +176,5 @@ of the ideal range, but we didn't come up with a good solution for this.
 https://learn.eartheasy.com/articles/top-10-greenhouse-gardening-mistakes/
 
 https://www.eclipse.org/paho/index.php?page=clients/java/index.php
+
+https://www.fortinet.com/resources/cyberglossary/tcp-ip
