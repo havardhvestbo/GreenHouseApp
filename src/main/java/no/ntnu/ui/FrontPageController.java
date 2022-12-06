@@ -16,6 +16,12 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 
 public class FrontPageController {
 
+    MqttPublisher temperaturePublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_SENSOR_ID, enums.QOS);
+    MqttPublisher humidityPublisher = new MqttPublisher(enums.HUMIDITY_TOPIC, enums.BROKER, enums.HUMIDITY_SENSOR_ID, enums.QOS);
+    ClientHandler clientHandler = new ClientHandler(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_CLIENT_ID, enums.QOS);
+    ClientHandler clientHandler2 = new ClientHandler(enums.HUMIDITY_TOPIC, enums.BROKER, enums.HUMIDITY_CLIENT_ID, enums.QOS);
+    SensorProvider sensorProvider = new SensorProvider();
+
     @FXML
     private TextArea console;
     private PrintStream ps;
@@ -23,31 +29,34 @@ public class FrontPageController {
 
     public void initialize() {
         ps = new PrintStream(new Console(console));
+        temperaturePublisher.startConnection();
+        temperaturePublisher.publishMessageToBroker(sensorProvider.getTemperatureSensor().readValue() + "");
+
+        humidityPublisher.startConnection();
+        humidityPublisher.publishMessageToBroker(sensorProvider.getHumiditySensor().readValue() + "");
 
     }
 
     public void buttonPressed(ActionEvent event) throws MqttException, IOException {
-        SensorProvider sensorProvider = new SensorProvider();
+        System.setOut(ps);
+        System.setErr(ps);
         System.out.println("Current readings: ");
-        MqttPublisher temperaturePublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_SENSOR_ID, enums.QOS);
+
         temperaturePublisher.startConnection();
         temperaturePublisher.publishMessageToBroker(sensorProvider.getTemperatureSensor().readValue() + "");
 
-        MqttPublisher humidityPublisher = new MqttPublisher(enums.HUMIDITY_TOPIC, enums.BROKER, enums.HUMIDITY_SENSOR_ID, enums.QOS);
         humidityPublisher.startConnection();
         humidityPublisher.publishMessageToBroker(sensorProvider.getHumiditySensor().readValue() + "");
 
-        ClientHandler clientHandler = new ClientHandler(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_CLIENT_ID, enums.QOS);
         clientHandler.startClient();
 
-        ClientHandler clientHandler2 = new ClientHandler(enums.HUMIDITY_TOPIC, enums.BROKER, enums.HUMIDITY_CLIENT_ID, enums.QOS);
         clientHandler2.startClient();
 
         System.out.println("Press button again to update readings. ");
         System.out.println("");
+        System.out.println("----------------------------------------------------------------------");
 
-        System.setOut(ps);
-        System.setErr(ps);
+
     }
 
     public class Console extends OutputStream {
