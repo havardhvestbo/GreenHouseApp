@@ -19,7 +19,7 @@ public class App {
   Sensor temperatureSensor;
   Sensor humiditySensor;
 
-  public App() throws MqttException, IOException {
+  public App() {
   }
 
   /**
@@ -59,7 +59,7 @@ public class App {
     lastHumidityReading = humiditySensor.readValue();
   }
 
-  private void sendDataToServer() throws MqttException {
+  private void sendDataToServer() {
     MqttPublisher temperaturePublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_SENSOR_ID, enums.QOS);
     temperaturePublisher.startConnection();
     temperaturePublisher.publishMessageToBroker(lastTemperatureReading + "");
@@ -86,7 +86,7 @@ public class App {
     }
   }
 
-  public static void main(String[] args) throws MqttException, IOException {
+  public static void main(String[] args) {
       System.out.println("Starting the application...");
       App app = new App();
       try {

@@ -24,7 +24,6 @@ public class FrontPageController {
     @FXML
     private TextArea console;
     private PrintStream ps;
-    private Button button;
 
     public void initialize() {
         ps = new PrintStream(new Console(console));
@@ -39,7 +38,7 @@ public class FrontPageController {
         clientHandler2.startClient();
     }
 
-    public void buttonPressed(ActionEvent event) throws MqttException, IOException {
+    public void buttonPressed() {
         System.setOut(ps);
         System.setErr(ps);
         System.out.println("Current readings: ");
@@ -65,7 +64,7 @@ public class FrontPageController {
             Platform.runLater(() -> console.appendText(valueOf));
         }
 
-        public void write(int b) throws IOException {
+        public void write(int b) {
             appendText(String.valueOf((char)b));
         }
     }

@@ -41,12 +41,10 @@ public class MqttPublisher {
     try {
       this.client = new MqttClient(broker, sensorID, new MemoryPersistence());
 
-      // connect options
       MqttConnectOptions options = new MqttConnectOptions();
       options.setConnectionTimeout(60);
       options.setKeepAliveInterval(60);
 
-      // connect
       client.connect(options);
     } catch (MqttException e) {
       throw new RuntimeException(e);
@@ -60,11 +58,9 @@ public class MqttPublisher {
    */
   public void publishMessageToBroker(String message) {
     try {
-      // create message and setup QoS
       MqttMessage m = new MqttMessage(message.getBytes());
       m.setQos(this.qos);
 
-      // publish message
       client.publish(topic, m);
 
     } catch (MqttException e) {

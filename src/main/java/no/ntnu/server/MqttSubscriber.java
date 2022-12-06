@@ -10,7 +10,6 @@ import java.util.List;
  */
 public class MqttSubscriber implements MqttCallback {
 
-  // Topic to receive data from
   private final String topic;
   private List<Double> data;
   private final String broker;
@@ -41,12 +40,10 @@ public class MqttSubscriber implements MqttCallback {
     try {
       client = new MqttClient(broker, clientId, new MemoryPersistence());
 
-      // connect options
       MqttConnectOptions options = new MqttConnectOptions();
       options.setConnectionTimeout(60);
       options.setKeepAliveInterval(60);
 
-      // setup callback using MqttCallback
       client.setCallback(this);
 
       client.connect(options);
