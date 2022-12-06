@@ -94,7 +94,7 @@ on the finished product, as well as possible future implements to the project.
 
 ### TCP/IP
   
-  TCP/IP is a set of protocols that acts as a framework for organizing connection between servers. 
+  *[TCP/IP](https://www.fortinet.com/resources/cyberglossary/tcp-ip)* is a set of protocols that acts as a framework for organizing connection between servers. 
   It consist of the following two protocols:
   
   IP (Internet Protocol) makes it possible to connect different underlying networks to a common 
@@ -119,7 +119,8 @@ understanding of java programming is sufficient.
 # Results
 
 The application shows a stream of sensor readings, giving the user insight
-to their greenhouse remotely. (screenshot of readings)
+to their greenhouse remotely. <img width="678" alt="Skjermbilde greenhouseapp" src="https://user-images.githubusercontent.com/102230830/205992480-7f788379-a424-4c2a-8710-57b49abf7168.PNG">
+
 
 Each virtual sensor sends data to it´s own topic, using the mqtt publisher. To 
 reviece the data from the mqtt broker, we use the mqttsubscriber. In our case 
@@ -176,3 +177,5 @@ of the ideal range, but we didn't come up with a good solution for this.
 https://learn.eartheasy.com/articles/top-10-greenhouse-gardening-mistakes/
 
 https://www.eclipse.org/paho/index.php?page=clients/java/index.php
+
+https://www.fortinet.com/resources/cyberglossary/tcp-ip
