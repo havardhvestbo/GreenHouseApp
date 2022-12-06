@@ -19,7 +19,19 @@ is, and how humid it is - inside our greenhouse.
 ** CONCLUSION AND FUTURE WORK **
 
 ## Table Of Contents
-[Introduction](#Introduction)
+* [Introduction](#Introduction)
+
+* [Theory and Technology](#Theory and Technology)
+
+* [Methodology](#Methodology)
+
+* [Results](#Results)
+
+* [Discussion](#Discussion)
+
+* [Conclution and Future Work](#Conclution and Future Work)
+
+* [References](#References)
 
 
 ## Introduction
@@ -43,7 +55,7 @@ domains and fields if needed. The sensor nodes can operate just as good in a hou
 office building or an engine room. This makes our application versatile, 
 and viable choice for a broad customer base. 
 
-## Theory and technology
+## Theory and Technology
 
 Here you write about the "things" you have used in your project. At the same
 time these are things that another person must know about to be able to
@@ -142,7 +154,7 @@ quite some time to change drastically.
 Here you can reflect on the result. What is working well? What is not working
 well and why?
 
-# Conclusion and future work
+# Conclusion and Future Work
 
 ** SHORT SUMMARY OF WORK DONE SO FAR **
 
