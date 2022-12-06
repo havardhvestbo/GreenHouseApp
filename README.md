@@ -114,8 +114,12 @@ textarea.
 
 # Discussion
 
-Here you can reflect on the result. What is working well? What is not working
-well and why?
+We have made a well-functioning application who serves it purpose. The code we have written have been documented and cleaned up making it easy to do further work on and read. The teamwork has been great we have enjoyed each others company and time spent together. During the duration of this project, we have had a healthy mix between fun and serious. From the start of the project our conversations have been open, and everyone has had a say in the groups decisions. The amount of work in this project has been extensive we have solved this by delegating the work mass between the group members. While delegating the work we took the following into consideration: preferences, strengths, weaknesses and convenience.
+
+Our time management have been sporadic due to more pressing deadlines and exams. We have often not found time to work on this project due to these reasons.
+Due to our sporadic work times this has affected our efficiency because we had to catch up to what we were working on last time every time we met to work on the project. If we would have been able to work a couple hours every week the workflow and efficiency would have been better.
+
+
 
 
 # Conclusion and Future Work
