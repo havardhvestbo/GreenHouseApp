@@ -16,6 +16,7 @@ public class GreenHouseApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FrontPage.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
+        primaryStage.setTitle("Greenhouse App");
         primaryStage.show();
       } catch(Exception e) {
         e.printStackTrace();
