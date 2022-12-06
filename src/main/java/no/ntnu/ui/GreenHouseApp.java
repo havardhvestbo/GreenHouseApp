@@ -5,8 +5,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
-  public class GreenHouseApp extends Application {
+/**
+ * Starts the UI
+ */
+public class GreenHouseApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
@@ -19,8 +21,4 @@ import javafx.stage.Stage;
         e.printStackTrace();
       }
     }
-
-    public static void main(String[] args) {
-      launch(args);
-    }
-  }
+}

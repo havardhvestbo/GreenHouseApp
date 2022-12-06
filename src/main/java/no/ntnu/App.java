@@ -75,7 +75,7 @@ public class App {
     clientHandler2.startClient();
 
     System.out.println("Next reading. ");
-    System.out.println("");
+    System.out.println(" ");
   }
 
   private void goToSleep() {

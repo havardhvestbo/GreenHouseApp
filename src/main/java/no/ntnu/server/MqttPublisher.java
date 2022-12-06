@@ -8,6 +8,7 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 /**
  * Establishes a connection & publishes data to an MQTT broker.
+ * Code adapted from: https://www.eclipse.org/paho/index.php?page=clients/java/index.php
  *
  */
 public class MqttPublisher {

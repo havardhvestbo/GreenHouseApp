@@ -22,6 +22,11 @@ public class ClientHandler extends MqttSubscriber {
     super(topic, broker, clientId, qos);
   }
 
+  /**
+   * Gives confirmation that the message has arrived.
+   * @param topic
+   * @param mqttMessage
+   */
   @Override
   public void messageArrived(String topic, MqttMessage mqttMessage) {
     double message = Double.parseDouble(new String(mqttMessage.getPayload()));

@@ -57,59 +57,22 @@ and viable choice for a broad customer base.
 
 ## Theory and Technology
 
-Here you write about the "things" you have used in your project. At the same
-time these are things that another person must know about to be able to
-understand your project.  
-Some principles to follow:
+### MQTT Broker
+  An MQTT broker is a simple publish-subscribe, machine to machine network protocol, manly used 
+  for message queing service
+  
+### DOMAIN KNOWLEGDE
+  The optimal temperature for the greenhouses we aim to supply is around 20 degrees Celsius.
+  This can fluctuate between 18 and 24 degrees, which is still acceptable. To regulate the 
+  temperature you could use a greenhouse air conditioner, shaders to block out the sun, 
+  ventilation system, misting or fogging. The ideal greenhouse humidity is around 80%. 
+  This is where we achieve the highest growth rate for normal greenhouse plants. 
+  To maintain and regulate the humidity you can use misting techniques or a humidifier.
+  
+### JavaFX
 
-* Write about all the relevant theory, technologies and protocols that your
-  project builds upon. For example, if you transfer data in JSON format using
-  the HTTP protocol, you should mention this and other protocols that it depends
-  on:
-    * HTTP
-    * JSON
-    * TCP
-    * IP
-    * Ethernet or wireless protocols you have used (is it 802.11x or something
-      else?)
-* Remember to mention the "why" - how is this "thing" you write about relevant
-  to your project? What does this protocol provide for your project? For
-  example, if you mention TCP - how is it important for your project? What if
-  you took away TCP, what would happen? What does TCP ensure for you?
-* Assume that the reader is your peer student - a computer science bachelor
-  student, midway through the study. Someone taking this course next year should
-  be able to read your report and understand it.
-* Don't go too deep. For example, you don't need to explain a lot of detail of
-  object-oriented programming. Every computer science student should know what
-  it is.
-* Prefer short description of many protocols instead of deep description of few
-  protocols.
-* Are there any specific aspects which are relevant for your project? If not,
-  don't describe those. For example, students sometimes spend several pages
-  describing the different methods (GET, POST, PUT) of HTTP protocol. Is that
-  important for your project? Do you use all these methods? If not, don't write
-  about these.
-* Is there any domain-knowledge the reader should know to understand the
-  project? For example, if you are monitoring temperature in a greenhouse, what
-  is known about it? Is the optimal temperature +20..30C, or is it -10..0C?
+### TCP/IP
   
- ### DOMAIN KNOWLEGDE
- The optimal temperature for the greenhouses we aim to supply is around 20 degrees Celsius.
- This can fluctuate between 18 and 24 degrees, which is still acceptable. To regulate the 
- temperature you could use a greenhouse air conditioner, shaders to block out the sun, 
- ventilation system, misting or fogging. The ideal greenhouse humidity is around 80%. 
- This is where we achieve the highest growth rate for normal greenhouse plants. 
- To maintain and regulate the humidity you can use misting techniques or a humidifier.
-  
-* At the same time, remember that the focus of the course is computer networks
-  and networking protocols. Therefore, use more time describing
-  networking-related concepts.
-* Describe the theory and techniques have you used for data simulation,
-  processing and visualization?
-* What connection to your other subjects does this project have? Does it use any
-  methods learned from the IDATA2302 Algorithms and data structures? Maybe
-  something from IDATA2303 Data modelling and databases? Or maybe you apply some
-  statistical methods from ISTA1003 Statistics?
 
 # Methodology
 
