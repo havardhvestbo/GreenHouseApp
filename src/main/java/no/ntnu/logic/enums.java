@@ -1,5 +1,8 @@
 package no.ntnu.logic;
 
+/**
+ * Provides a variety of enums used by other classes.
+ */
 public class enums {
 
   public static final String BROKER = "tcp://129.241.152.12:1883";
