@@ -86,4 +86,15 @@ public class App {
       System.out.println("Ooops, someone woke us up in the middle of a nap");
     }
   }
+
+  public static void main(String[] args) throws MqttException, IOException {
+      System.out.println("Starting the application...");
+      App app = new App();
+      try {
+        app.run();
+      } catch (Exception e) {
+        System.out.println("Oops: " + e.getMessage());
+      }
+      System.out.println("Application finished");
+    }
 }
