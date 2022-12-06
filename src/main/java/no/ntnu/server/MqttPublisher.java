@@ -7,8 +7,8 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 /**
- * Establishes a connection & publishes data to an MQTT broker. Code adapted from: <a
- * href="https://www.emqx.com/en/blog/how-to-use-mqtt-in-java">emx.com</a>
+ * Establishes a connection & publishes data to an MQTT broker.
+ *
  */
 public class MqttPublisher {
 
@@ -66,26 +66,10 @@ public class MqttPublisher {
 
       // publish message
       client.publish(topic, m);
-//      System.out.println("Message sent to topic: " + topic);
-//      System.out.println("Message content: " + new String(m.getPayload()));
-//      System.out.println("----------------");
+
     } catch (MqttException e) {
       throw new RuntimeException(e);
     }
   }
 
-  /**
-   * Terminates connection with the MQTT broker.
-   */
-  public void terminateConnection() {
-    try {
-      // disconnect
-      client.disconnect();
-
-      // close client
-      client.close();
-    } catch (MqttException e) {
-      throw new RuntimeException(e);
-    }
-  }
 }

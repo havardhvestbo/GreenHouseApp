@@ -1,18 +1,13 @@
 package no.ntnu.server;
 
-import java.util.ArrayList;
-import java.util.List;
-import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.MqttCallback;
-import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * Establishes a connection & subscribes to a topic from an MQTT broker. Code adapted from: <a
- * href="https://www.emqx.com/en/blog/how-to-use-mqtt-in-java">emx.com</a>
+ * Establishes a connection & subscribes to a topic from an MQTT broker.
  */
 public class MqttSubscriber implements MqttCallback {
 
@@ -62,12 +57,21 @@ public class MqttSubscriber implements MqttCallback {
     }
   }
 
+  /**
+   * Lets user know if connection is lost.
+   * @param throwable
+   */
   @Override
   public void connectionLost(Throwable throwable) {
-    //System.out.println("Connection lost. " + throwable);
-    System.out.println("");
+    System.out.println("Connection lost. " + throwable);
+    System.out.println(" ");
   }
 
+  /**
+   * Notifies the user that the message has arrived.
+   * @param topic
+   * @param mqttMessage
+   */
   @Override
   public void messageArrived(String topic, MqttMessage mqttMessage) {
     String message = new String(mqttMessage.getPayload());
@@ -76,48 +80,18 @@ public class MqttSubscriber implements MqttCallback {
     System.out.println("Message: " + message);
     System.out.println("----------------");
 
-    // **Do something with the message**
-    // this.data.add(Double.parseDouble(message));
+
   }
 
+  /**
+   * Notifies the user when the delivery is complete.
+   * @param iMqttDeliveryToken
+   */
   @Override
   public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
     System.out.println("deliveryComplete: " + iMqttDeliveryToken);
   }
 
-  /**
-   * Disconnects the client from the MQTT broker.
-   */
-  public void disconnectClient() throws MqttException {
-    this.client.disconnect();
-  }
-
-  /**
-   * Returns the clientID.
-   *
-   * @return The clientID
-   */
-  public String getClientId() {
-    return clientId;
-  }
-
-  /**
-   * Returns a list of data received.
-   *
-   * @return The list of data received
-   */
-  public List<Double> getData() {
-    return this.data;
-  }
-
-  /**
-   * Returns the topic data was received from.
-   *
-   * @return The topic data was received from
-   */
-  public String getTopic() {
-    return topic;
-  }
 }
 
 
