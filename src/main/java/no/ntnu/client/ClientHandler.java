@@ -7,7 +7,7 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
  * Responsible for establishing a connection to the MQTT broker.
  */
 public class ClientHandler extends MqttSubscriber {
-  Double lastValue;
+  Double recentValue;
 
   /**
    * Creates a client with a connection to an MQTT broker.
@@ -30,11 +30,11 @@ public class ClientHandler extends MqttSubscriber {
     System.out.println("----------------");
 
     // **Do something with the message**
-    this.lastValue = message;
+    this.recentValue = message;
   }
 
   public Double getLastValue() {
-    return lastValue;
+    return recentValue;
   }
 
 }
