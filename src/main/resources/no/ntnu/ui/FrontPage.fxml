@@ -8,7 +8,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.ui.FrontPageController">
    <children>
-      <TextArea fx:id="console" layoutX="362.0" layoutY="21.0" prefHeight="453.0" prefWidth="492.0" />
+      <TextArea fx:id="console" editable="false" layoutX="362.0" layoutY="21.0" prefHeight="453.0" prefWidth="492.0" />
       <Button fx:id="button" layoutX="87.0" layoutY="238.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="124.0" prefWidth="202.0" style="-fx-background-color: gray;" text="Get sensor data" textFill="WHITE">
          <font>
             <Font name="Apple Symbols" size="27.0" />
