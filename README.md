@@ -18,6 +18,21 @@ is, and how humid it is - inside our greenhouse.
 
 ** CONCLUSION AND FUTURE WORK **
 
+## Table Of Contents
+* [Introduction](#Introduction)
+
+* [Theory and Technology](#Theory-and-Technology)
+
+* [Methodology](#Methodology)
+
+* [Results](#Results)
+
+* [Discussion](#Discussion)
+
+* [Conclusion and Future Work](#Conclusion-and-Future-Work)
+
+* [References](#References)
+
 
 ## Introduction
 
@@ -40,7 +55,7 @@ domains and fields if needed. The sensor nodes can operate just as good in a hou
 office building or an engine room. This makes our application versatile, 
 and viable choice for a broad customer base. 
 
-## Theory and technology
+## Theory and Technology
 
 Here you write about the "things" you have used in your project. At the same
 time these are things that another person must know about to be able to
@@ -78,7 +93,7 @@ Some principles to follow:
   project? For example, if you are monitoring temperature in a greenhouse, what
   is known about it? Is the optimal temperature +20..30C, or is it -10..0C?
   
- ## DOMAIN KNOWLEGDE
+ ### DOMAIN KNOWLEGDE
  The optimal temperature for the greenhouses we aim to supply is around 20 degrees Celsius.
  This can fluctuate between 18 and 24 degrees, which is still acceptable. To regulate the 
  temperature you could use a greenhouse air conditioner, shaders to block out the sun, 
@@ -139,7 +154,7 @@ quite some time to change drastically.
 Here you can reflect on the result. What is working well? What is not working
 well and why?
 
-# Conclusion and future work
+# Conclusion and Future Work
 
 ** SHORT SUMMARY OF WORK DONE SO FAR **
 
