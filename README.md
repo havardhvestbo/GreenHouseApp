@@ -123,7 +123,7 @@ to their greenhouse remotely. (screenshot of readings)
 
 Each virtual sensor sends data to it´s own topic, using the mqtt publisher. To 
 reviece the data from the mqtt broker, we use the mqttsubscriber. In our case 
-he client handler is the mqttsubsciber (extension to the subscriber). The data
+he client handler is the *[mqttsubsciber](https://www.eclipse.org/paho/index.php?page=clients/java/index.php)* (extension to the subscriber). The data
 does not auto-update, because temperature and humidity would not change
 drastically in a short amount of time - therefore, we decided that you only need
 to press the button in our GUI once to get a one-time reading from the sensors.
