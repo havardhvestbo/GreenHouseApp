@@ -1,7 +1,10 @@
 # GreenHouseApp
 
-The purpose of the GreenHouseApp is to record and display temperature and humidity in a greenhouse, to make sure it's never too warm, cold, humid or dry.
-Whenever the temperature or humidity fluxuates outside a given range, you get a notification so you can go and fix the problem inside the greenhouse. The GreenHouseApp was made for a school project, as part of the exam.
+The purpose of the GreenHouseApp is to record and display temperature and humidity
+in a greenhouse, to make sure it's never too warm, cold, humid or dry.
+Whenever the temperature or humidity fluxuates outside a given range, you get a 
+notification so you can go and fix the problem inside the greenhouse. The 
+GreenHouseApp was made for a school project, as part of the exam.
 
 
 ## Abstract
@@ -60,9 +63,16 @@ on the finished product, as well as possible future implements to the project.
 
 ### MQTT Broker
 
-An MQTT broker is a simple publish-subscribe, machine to machine network protocol, manly used for message queuing service. In our case we publish and subscribe to two different topics on the broker "tcp://129.241.152.12:1883". One for each sensor, "group21/greenhouse/sensors/temperature" and "group21/greenhouse/sensors/humidity". 
+An MQTT broker is a simple publish-subscribe, machine to machine network protocol, mainly
+used for message queuing service. In our case we publish and subscribe to two different 
+topics on the broker "tcp://129.241.152.12:1883". One for each sensor, 
+"group21/greenhouse/sensors/temperature" and "group21/greenhouse/sensors/humidity".
 
-MQTT stands for MQ telemetry transport. The protocol is basically a set of rules that defines and decides how devices publishes and subscribes to data over the web. As seen in the brokers address MQTT uses TCP to establish a connection between the sensors and the MQTT broker.
+MQTT stands for MQ telemetry transport. The protocol is basically a set of rules that 
+defines and decides how devices publishes and subscribes to data over the web. As seen 
+in the brokers address MQTT uses TCP to establish a connection between the sensors and 
+the MQTT broker.
+
 
   
 ### DOMAIN KNOWLEGDE
@@ -115,12 +125,25 @@ textarea.
 
 # Discussion
 
-We have made a well-functioning application who serves it purpose. The code we have written have been documented and cleaned up making it easy to do further work on and read. The teamwork has been great we have enjoyed each others company and time spent together. During the duration of this project, we have had a healthy mix between fun and serious. From the start of the project our conversations have been open, and everyone has had a say in the groups decisions. The amount of work in this project has been extensive we have solved this by delegating the work mass between the group members. While delegating the work we took the following into consideration: preferences, strengths, weaknesses and convenience.
+We have made a well-functioning application that serves it purpose. The code we 
+have written has been documented and cleaned up making it clear and concise to 
+read, as well as do further work on. The teamwork has been great, we have 
+enjoyed each others company and the time spent together. During the duration of
+this project, we have had a healthy mix of fun and serious. From the start of 
+the project our conversations have been open, and everyone has had a say in the
+groups decisions. The amount of work in this project has been extensive. We have
+solved this by delegating the work mass between the group members. While 
+delegating the work we took the following into consideration: preferences, 
+strengths, weaknesses and convenience.
 
-Our time management have been sporadic due to more pressing deadlines and exams. We have often not found time to work on this project due to these reasons.
-Due to our sporadic work times this has affected our efficiency because we had to catch up to what we were working on last time every time we met to work on the project. If we would have been able to work a couple hours every week the workflow and efficiency would have been better.
-
-
+Our time management have been sporadic due to more pressing deadlines and exams.
+We have often not found time to work on this project due to these reasons. Due
+to our sporadic work times this has affected our efficiency because we had to 
+catch up to what we were working on last time every time we met to work on the
+project. Notably, we did meet up to work multiple times without any commits. 
+Sometimes we would spend time working on solutions that did not work, and 
+other times we would simply spend time trying to understand how to implement 
+possible solutions.
 
 
 # Conclusion and Future Work
