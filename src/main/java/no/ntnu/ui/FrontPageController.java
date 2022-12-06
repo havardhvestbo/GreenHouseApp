@@ -43,12 +43,12 @@ public class FrontPageController {
         System.setOut(ps);
         System.setErr(ps);
         System.out.println("Current readings: ");
-        System.out.println("");
+        System.out.println(" ");
 
         initialize();
 
         System.out.println("Press button again to update readings. ");
-        System.out.println("");
+        System.out.println(" ");
         System.out.println("----------------------------------------------------------------------");
 
 
