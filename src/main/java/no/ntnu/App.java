@@ -1,19 +1,18 @@
 package no.ntnu;
 
-import java.io.IOException;
 import no.ntnu.client.ClientHandler;
 import no.ntnu.logic.enums;
 import no.ntnu.sensors.Sensor;
 import no.ntnu.server.MqttPublisher;
-import no.ntnu.server.MqttSubscriber;
 import org.eclipse.paho.client.mqttv3.MqttException;
+import java.io.IOException;
 
 /**
  * Represents the whole application, including the sensors.
  */
 public class App {
 
-  private static final long SLEEP_DURATION_MS = 5000;
+  private static final long SLEEP_DURATION_MS = 1000;
   double lastTemperatureReading;
   double lastHumidityReading;
 

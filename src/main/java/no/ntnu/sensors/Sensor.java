@@ -1,7 +1,5 @@
 package no.ntnu.sensors;
 
-import no.ntnu.server.MqttPublisher;
-
 /**
  * Represents (or imitates) a physical sensor on the platform
  */

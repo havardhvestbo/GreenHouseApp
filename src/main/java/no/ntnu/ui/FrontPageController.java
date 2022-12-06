@@ -2,7 +2,6 @@ package no.ntnu.ui;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
-
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

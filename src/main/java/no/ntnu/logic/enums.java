@@ -11,7 +11,6 @@ public class enums {
   public static final String HUMIDITY_CLIENT_ID = "group21_humidity_client";
   public static final String HUMIDITY_SENSOR_ID = "group21_Humidity_sensor";
   public static final int QOS = 0;
-
   public static final String TEMPERATURE_TOPIC = "group21/greenhouse/sensors/temperature";
   public static final String HUMIDITY_TOPIC = "group21/greenhouse/sensors/humidity";
 }
