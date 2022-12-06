@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Establishes a connection & subscribes to a topic from an MQTT broker.
+ * Code adapted from: https://www.eclipse.org/paho/index.php?page=clients/java/index.php
  */
 public class MqttSubscriber implements MqttCallback {
 

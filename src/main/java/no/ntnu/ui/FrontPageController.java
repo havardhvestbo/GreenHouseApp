@@ -1,17 +1,18 @@
 package no.ntnu.ui;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintStream;
+
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import no.ntnu.SensorProvider;
 import no.ntnu.client.ClientHandler;
 import no.ntnu.logic.enums;
 import no.ntnu.server.MqttPublisher;
-import org.eclipse.paho.client.mqttv3.MqttException;
+import java.io.OutputStream;
+import java.io.PrintStream;
+
+/**
+ * Code adapted from: https://stackoverflow.com/questions/33494052/javafx-redirect-console-output-to-textarea-that-is-created-in-scenebuilder
+ */
 
 public class FrontPageController {
 
