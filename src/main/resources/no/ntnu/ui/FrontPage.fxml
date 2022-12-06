@@ -21,7 +21,7 @@
             <Font name="Hiragino Sans W7" size="15.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="20.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Green House App">
+      <Text fill="WHITE" layoutX="20.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GreenHouse App">
          <font>
             <Font name="Hiragino Sans W7" size="34.0" />
          </font>
