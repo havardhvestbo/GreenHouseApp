@@ -47,7 +47,7 @@ monitor the temperature and humidity is important. This is a task that tradition
 is incredibly tedious. But with the advancements in wireless technology, we can
 develop sensors that record and transmit this information automatically. It's
 important that greenhouses keep their temperature and humidity stable, as the range
-of ideal temperature and humidity is 20-24 degrees and 80-95% respectively. (ref)
+of ideal temperature and humidity is 20-24 degrees and 80-95% *[respectively](https://learn.eartheasy.com/articles/top-10-greenhouse-gardening-mistakes/)*.
 Our main target is greenhouses, but our solution could also be implemented into other 
 domains and fields if needed. The sensor nodes can operate just as good in a house, 
 office building or an engine room. This makes our application versatile, 
