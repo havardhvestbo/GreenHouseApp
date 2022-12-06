@@ -1,10 +1,6 @@
 package no.ntnu.ui;
-<<<<<<< HEAD
 import java.io.OutputStream;
 import java.io.PrintStream;
-=======
-
->>>>>>> master
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
@@ -12,18 +8,10 @@ import no.ntnu.SensorProvider;
 import no.ntnu.client.ClientHandler;
 import no.ntnu.logic.enums;
 import no.ntnu.server.MqttPublisher;
-<<<<<<< HEAD
-=======
-import java.io.OutputStream;
-import java.io.PrintStream;
 
 /**
  * Code adapted from: https://stackoverflow.com/questions/33494052/javafx-redirect-console-output-to-textarea-that-is-created-in-scenebuilder
- */
->>>>>>> master
-
-
-/**
+ *
  * Controller for the frontpage.
  * Linked to the FXML-file representing the view of MVC of JavaFx FXML.
  */
