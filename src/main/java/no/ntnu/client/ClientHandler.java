@@ -4,16 +4,17 @@ import no.ntnu.server.MqttSubscriber;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 /**
- * Responsible for establishing a connection to the MQTT broker.
+ * This class is responsible for establishing connection to the MQTT broker.
  */
 public class ClientHandler extends MqttSubscriber {
   Double recentValue;
 
   /**
-   * Creates a client with a connection to an MQTT broker.
+   * Creates a client which connects to an MQTT broker.
    *
-   * @param topic mqtt topic
+   *
    * @param broker mqtt broker
+   * @param topic mqtt topic
    * @param clientId the client id
    * @param qos qos value
    */
