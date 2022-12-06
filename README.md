@@ -21,7 +21,7 @@ is, and how humid it is - inside our greenhouse.
 ## Table Of Contents
 * [Introduction](#Introduction)
 
-* [Theory and Technology](#Theory and Technology)
+* [Theory and Technology](#Theory-and-Technology)
 
 * [Methodology](#Methodology)
 
@@ -29,7 +29,7 @@ is, and how humid it is - inside our greenhouse.
 
 * [Discussion](#Discussion)
 
-* [Conclusion and Future Work](#Conclusion and Future Work)
+* [Conclusion and Future Work](#Conclusion-and-Future-Work)
 
 * [References](#References)
 
