@@ -13,7 +13,7 @@ public class SensorProvider {
   private final TemperatureSensor temperatureSensor = new TemperatureSensor();
   private final HumiditySensor humiditySensor = new HumiditySensor();
 
-  private SensorProvider() {
+  public SensorProvider() {
   }
 
   private static final SensorProvider instance = new SensorProvider();
