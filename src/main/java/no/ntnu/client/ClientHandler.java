@@ -30,12 +30,7 @@ public class ClientHandler extends MqttSubscriber {
     System.out.println("Message: " + message);
     System.out.println("----------------");
 
-    // **Do something with the message**
     this.recentValue = message;
-  }
-
-  public Double getLastValue() {
-    return recentValue;
   }
 
 }

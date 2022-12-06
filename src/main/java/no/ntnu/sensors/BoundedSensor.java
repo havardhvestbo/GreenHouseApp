@@ -27,12 +27,19 @@ public abstract class BoundedSensor implements Sensor {
     max = maxValue;
   }
 
+  /**
+   * Reads the current value.
+   * @return the current value.
+   */
   @Override
   public double readValue() {
     changeCurrentValueRandomly();
     return currentValue;
   }
 
+  /**
+   * Changes the current value randomly.
+   */
   private void changeCurrentValueRandomly() {
     double delta = generateRandomDelta();
     currentValue += delta;
@@ -52,13 +59,18 @@ public abstract class BoundedSensor implements Sensor {
     return randomGenerator.nextDouble(-maxDelta, maxDelta);
   }
 
+  /**
+   * Checks if our current value is inside boundaries.
+   *
+   */
   private boolean isCurrentValueOutOfBoundaries() {
     return currentValue > max || currentValue < min;
   }
 
+  /**
+   * Rounds the current value to have one decimal.
+   */
   private void roundCurrentValueToOneDecimal() {
-    // Code adapted from https://stackoverflow.com/a/21596413/1703497
-    // Note: this won't work, as it will round the number down: (int) (currentValue * 10) / 10.0
     currentValue = BigDecimal.valueOf(currentValue)
         .setScale(1, RoundingMode.HALF_UP)
         .doubleValue();
