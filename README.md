@@ -178,7 +178,10 @@ The app works great from a desktop with an IDE installed, but realistically,
 the user wouldn't have a need to check temperature and humidity of their
 greenhouse from a desktop every time. Ideally, they would check it on the
 go, wherever they happen to be. The best solution for that problem is to
-be able to use the GreenHouseApp from a mobile device.
+be able to use the GreenHouseApp from a mobile device. Also, we would like to
+implement better security features. As of now, all you have to do is to start 
+the application to get the data displayed. In the future we would implement a
+login page, to prevent unauthorized users to access the data
 
 We would also like to notify users whenever the sensor readings are outside
 of the ideal range, but we didn't come up with a good solution for this. We imagine
