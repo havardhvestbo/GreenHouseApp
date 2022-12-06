@@ -8,7 +8,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
-import no.ntnu.App;
 import no.ntnu.SensorProvider;
 import no.ntnu.client.ClientHandler;
 import no.ntnu.logic.enums;
@@ -23,16 +22,14 @@ public class FrontPageController {
     private Button button;
 
     public void initialize() {
-        ps = new PrintStream(new Console(console)) ;
+        ps = new PrintStream(new Console(console));
+
     }
 
     public void buttonPressed(ActionEvent event) throws MqttException, IOException {
         SensorProvider sensorProvider = new SensorProvider();
-        System.setOut(ps);
-        System.setErr(ps);
         System.out.println("Current readings: ");
-        MqttPublisher
-            temperaturePublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_SENSOR_ID, enums.QOS);
+        MqttPublisher temperaturePublisher = new MqttPublisher(enums.TEMPERATURE_TOPIC, enums.BROKER, enums.TEMPERATURE_SENSOR_ID, enums.QOS);
         temperaturePublisher.startConnection();
         temperaturePublisher.publishMessageToBroker(sensorProvider.getTemperatureSensor().readValue() + "");
 
@@ -46,8 +43,12 @@ public class FrontPageController {
         ClientHandler clientHandler2 = new ClientHandler(enums.HUMIDITY_TOPIC, enums.BROKER, enums.HUMIDITY_CLIENT_ID, enums.QOS);
         clientHandler2.startClient();
 
-        System.out.println("Press button againg to update. ");
-        System.out.println(""); }
+        System.out.println("Press button again to update readings. ");
+        System.out.println("");
+
+        System.setOut(ps);
+        System.setErr(ps);
+    }
 
     public class Console extends OutputStream {
         private TextArea console;

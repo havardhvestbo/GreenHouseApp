@@ -66,9 +66,9 @@ public class MqttPublisher {
 
       // publish message
       client.publish(topic, m);
-      System.out.println("Message sent to topic: " + topic);
-      System.out.println("Message content: " + new String(m.getPayload()));
-      System.out.println("----------------");
+//      System.out.println("Message sent to topic: " + topic);
+//      System.out.println("Message content: " + new String(m.getPayload()));
+//      System.out.println("----------------");
     } catch (MqttException e) {
       throw new RuntimeException(e);
     }
