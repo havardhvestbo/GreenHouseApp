@@ -10,7 +10,7 @@ import javafx.stage.Stage;
  */
 public class GreenHouseApp extends Application {
 
-    @Override
+  @Override
     public void start(Stage primaryStage) {
       try {
         Parent root = FXMLLoader.load(getClass().getResource("FrontPage.fxml"));
@@ -21,4 +21,9 @@ public class GreenHouseApp extends Application {
         e.printStackTrace();
       }
     }
+
+  public static void main(String[] args) {
+    launch(args);
+  }
+
 }
