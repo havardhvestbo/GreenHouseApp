@@ -75,7 +75,7 @@ on the finished product, as well as possible future implements to the project.
 
 
   
-### DOMAIN KNOWLEGDE
+### Domain Knowledge
 
  The optimal temperature for the greenhouses we aim to supply is around 20 degrees Celsius.
  This can fluctuate between 18 and 24 degrees, which is still acceptable. To regulate the 
@@ -102,6 +102,9 @@ on the finished product, as well as possible future implements to the project.
   
   TCP (Transmission Control Protocol) is a protocol that ensures reliable transport
   of data signals between user programs that communicate via the logical network.
+  
+### Data Simulation
+  
 
 # Methodology
 
@@ -160,7 +163,8 @@ possible solutions.
 The product we ended up with, is an application that shows you the readings from
 the virtual sensors whenever you press the button to update the readings. The data
 is generated from the program, sent to an MQTT broker, and then sent back, to be
-displayed in the GUI.
+displayed in the GUI. You can then continue pressing the button to keep updating 
+the readings, giving you constant access to the data, remotely.
 
 For future work, we would like to develop an app that can run on mobile devices.
 The app works great from a desktop with an IDE installed, but realistically,
@@ -170,7 +174,9 @@ go, wherever they happen to be. The best solution for that problem is to
 be able to use the GreenHouseApp from a mobile device.
 
 We would also like to notify users whenever the sensor readings are outside
-of the ideal range, but we didn't come up with a good solution for this.
+of the ideal range, but we didn't come up with a good solution for this. We imagine
+a push notification on your mobile device would be perfect for the intendended use
+of this application.
 
 # References
 
