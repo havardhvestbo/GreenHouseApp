@@ -74,6 +74,11 @@ on the finished product, as well as possible future implements to the project.
   
 ### JavaFX
 
+  To present the data to the user we crated a JavaFX application where the user can fetch 
+  the data and read it. We used Scene Builder to make the FXML files whom we later implemented 
+  in the application.
+
+
 ### TCP/IP
   
 
